@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bismark Agyapong</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://github.com/bismarkagyapong/files/raw/refs/heads/main/pic01.webp">
+    <link rel="stylesheet" href="./style.css">
+  
+  <style>
+
+    body {
+
+      margin: 0;
+
+    }
+
+    .preloader {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      background-color: #ffffff; /* ব্যাকগ্রাউন্ড কালার */
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      z-index: 1000;
+
+    }
+
+    .hidden {
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    }
+
+  </style>
+  
+  </head>
+
+<body>
+    <div class="link-container">
+    <img src="https://github.com/bismarkagyapong/files/raw/refs/heads/main/pic01.webp" alt="Profile Picture" class="profile-picture">        <h1>Bismark Agyapong</h1>
+        <p>Tech, Web Dev. Enthusiast</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/officialbismarkasempa" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/markmix.studios" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/bismarkagyapong" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://wa.me/233552628597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://pinterest.com/officialbismarkagyapong" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="mailto:markmixstudios@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+     
+          <div class="link-card">
+            <a href="https://www.facebook.com/officialbismarkasempa" target="_blank" onclick="console.log('Facebook Link Clicked')">
+                <img src="https://files.jhsite.com/images/facebook.png" alt="Facebook Icon" class="icon">
+                <span>My Facebook</span>
+            </a>
+        </div>
+        <div class="link-card">
+            <a href="https://wa.me/233552628597" target="_blank" onclick="console.log('WhatsApp Link Clicked')">
+                <img src="https://files.jhsite.com/images/whatsapp.png" alt="WhatsApp Icon" class="icon">
+                <span>My WhatsApp</span>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://t.me/bismarkagyapong" target="_blank" onclick="console.log('Telegram Link Clicked')">
+                <img src="https://files.jhsite.com/images/telegram.png" alt="Telegram Icon" class="icon">
+                <span>My Telegram ID</span>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://www.instagram.com/markmix.studios" target="_blank" onclick="console.log('Instagram Link Clicked')">
+                <img src="https://files.jhsite.com/images/instagram.png" alt="Instagram Icon" class="icon">
+                <span>My Instagram ID</span>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://www.threads.net/markmix.studios" target="_blank" onclick="console.log('Threads Link Clicked')">
+                <img src="https://files.jhsite.com/images/threads.png" alt="Threads Icon" class="icon">
+                <span>My Threads ID</span>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://pinterest.com/officialbismarkagyapong" target="_blank" onclick="console.log('Pinterest Link Clicked')">
+                <img src="https://files.jhsite.com/images/pinterest.png" alt="Pinterest Icon" class="icon">
+                <span>My Pinterest Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div id="imagePreviewModal" class="modal">
+    <span class="close" onclick="closePreview()">&times;</span>
+    <img id="previewImage" class="modal-content">
+</div>
+  
+  <div class="footer">
+
+            <p style="color: #ffffff; font-size: 14px; margin-top: 20px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 10px; border-radius: 10px; border: 1px dashed rgba(255, 255, 255, 0.3); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+                 <a href="https://markmixstudios.blogspot.com/p/about.html" target="_blank" style="color: #ffffff; text-decoration: none;">&copy; 2025 - Markmix Studios Limited</a>
+
+            </p>
+
+        </div>
+  
+  <!--<div>
+
+     <div class="wave"></div>
+
+     <div class="wave"></div>
+
+     <div class="wave"></div>
+
+  </div>-->
+  
+  <div class="preloader" id="preloader">
+
+    <dotlottie-player 
+
+      src="https://lottie.host/3aef76b4-e7ba-4fee-9458-7bd8740986be/1EKQNdruLA.json" 
+
+      background="transparent" 
+
+      speed="1" 
+
+      style="width: 300px; height: 300px" 
+
+      loop autoplay>
+
+    </dotlottie-player>
+
+  </div>
+
+    <script src="script.js"></script>
+    
+  
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  
+  
+  <script>
+
+    // Remove preloader after 3 seconds
+
+    window.addEventListener('load', () => {
+
+      setTimeout(() => {
+
+        const preloader = document.getElementById('preloader');
+
+        const mainContent = document.getElementById('main-content');
+
+        
+
+        preloader.classList.add('hidden');
+
+        setTimeout(() => {
+
+          preloader.style.display = 'none';
+
+          mainContent.style.display = 'block'; // Show main content
+
+        }, 500); // Wait for the fade-out transition
+
+      }, 3000); // Preloader duration
+
+    });
+
+  </script>
+  
+  
+</body>
+
+            </html>
